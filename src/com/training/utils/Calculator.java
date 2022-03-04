@@ -9,7 +9,14 @@ public class Calculator {
 	//static variable
 	private static int ctr;
 	
- 
+  //default constructor
+	public Calculator() {
+		ctr++;
+		System.out.println("Calculator object created");
+		
+	}
+	
+	
 	
 	//methods are called as setters and getters 
 	//accessors getters and mutators setters
@@ -27,7 +34,11 @@ public class Calculator {
     	
      public int add() {
     	 return this.a+this.b;
-     }   	
+     }
+	public static int getCtr() {
+		// TODO Auto-generated method stub
+		return ctr;
+	}   	
 	
 
 
