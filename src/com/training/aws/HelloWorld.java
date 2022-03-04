@@ -1,5 +1,7 @@
 package com.training.aws;
 
+import com.training.entities.Book;
+
 //first line of code is package , in which your source code is residing
 //where is my HelloWorld.java -- in com.training.aws
 
@@ -12,11 +14,11 @@ package com.training.aws;
 //if I want public class , it has to be in its own source code file
 //if I want non public class then it can be defined in this source code also
 //also one type of access specifier , default or package friendly
-
-public class HelloWorld {
+ public class HelloWorld {
 	
 	public static void main(String [] a) {
 		
+		Book b1 =new Book();
 		System.out.println("hello world!");
 		
 		
