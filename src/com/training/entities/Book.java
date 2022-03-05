@@ -9,8 +9,20 @@ public class Book {
 	private String title;
 	private LocalDate dateOfPublishing;
 	private double price;
-	
-    //static variable
+	public  Author au;
+    public  Author getAu() {
+		return au;
+	}
+
+	public  void setAu(Author au) {
+		this.au = au;
+	}
+
+	public static void setCtr(int ctr) {
+		Book.ctr = ctr;
+	}
+
+	//static variable
 	private static int ctr;
 	public static int getCtr() {return ctr;}
 	
